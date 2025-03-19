@@ -55,6 +55,7 @@ public class RestClient {
 
 		case NO_AUTH:
 			System.out.println("This auth is not suppoted .please enter the right authtype..");
+			break;
 
 		default:
 			throw new FrameworkException("No Auth Supported");

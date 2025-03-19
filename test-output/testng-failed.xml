@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [API Regression Suite]" guice-stage="DEVELOPMENT" verbose="3">
-  <test thread-count="5" name="CreateUserTest User Test(failed)" verbose="3">
+  <test thread-count="5" name="ReqresTest User Test(failed)" verbose="3">
+    <parameter name="baseUrl" value="https://reqres.in/"/>
     <classes>
-      <class name="com.qa.api.tests.CreateUserTest">
+      <class name="com.qa.reqres.api.tests.ReqresTest">
         <methods>
-          <include name="CreateUserTestUsingJSONFile"/>
+          <include name="getUserReqresTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.api.tests.CreateUserTest -->
+      </class> <!-- com.qa.reqres.api.tests.ReqresTest -->
     </classes>
-  </test> <!-- CreateUserTest User Test(failed) -->
+  </test> <!-- ReqresTest User Test(failed) -->
 </suite> <!-- Failed suite [API Regression Suite] -->

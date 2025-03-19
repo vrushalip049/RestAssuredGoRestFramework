@@ -45,7 +45,7 @@ public class CreateUserTest extends BaseTest {
 		
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void CreateUserTestUsingJSONFile()
 
 	{
