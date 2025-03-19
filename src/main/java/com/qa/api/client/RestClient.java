@@ -22,6 +22,7 @@ public class RestClient {
 	private ResponseSpecification responseSpec200 = expect().statusCode(200);
 //	/import static org.hamcrest.Matchers.*;
 	private ResponseSpecification responseSpec200or400 = expect().statusCode(anyOf(equalTo(200),equalTo(404)));
+	private ResponseSpecification responseSpec200or201 = expect().statusCode(anyOf(equalTo(200),equalTo(201)));
 	private ResponseSpecification responseSpec201 = expect().statusCode(201);
 	private ResponseSpecification responseSpec204 = expect().statusCode(204);
 	private ResponseSpecification responseSpec400 = expect().statusCode(400);
@@ -39,6 +40,9 @@ public class RestClient {
 		switch (authType) {
 		case BEARER_TOKEN:
 			request.header("Authorization", "Bearer " + ConfigManager.get("bearerToken"));
+			break;
+		case CONTACTS_BEARER_TOKEN:
+			request.header("Authorization", "Bearer " + ConfigManager.get("CONTACTS_BEARER_TOKEN"));
 			break;
 
 		case OAUTH2:
@@ -125,7 +129,7 @@ public class RestClient {
 		 * if (pathParm != null) { request.params(pathParm); }
 		 */
 
-		Response response = request.body(body).post(endPoint).then().spec(responseSpec201).extract().response();
+		Response response = request.body(body).post(endPoint).then().spec(responseSpec200or201).extract().response();
 		System.out.println(response);
 		return response;
 
@@ -143,7 +147,7 @@ public class RestClient {
 		 * if (pathParm != null) { request.params(pathParm); }
 		 */
 
-		Response response = request.body(file).post(endPoint).then().spec(responseSpec201).extract().response();
+		Response response = request.body(file).post(endPoint).then().spec(responseSpec200or201).extract().response();
 		System.out.println(response);
 		return response;
 
