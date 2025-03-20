@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.reqres.api.tests.ReqresTest">
+      <class name="com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest">
         <methods>
-          <include name="getUserReqresTest"/>
+          <include name="getFlightDetailsTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.reqres.api.tests.ReqresTest -->
+      </class> <!-- com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

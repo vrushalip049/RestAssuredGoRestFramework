@@ -1,0 +1,12 @@
+com\qa\api\pojo\User.class
+com\qa\api\manager\ConfigManager.class
+com\qa\api\client\RestClient.class
+com\qa\api\utils\StringUtility.class
+com\qa\api\client\RestClient$1.class
+com\qa\api\pojo\User$UserBuilder.class
+com\qa\api\constants\AuthType.class
+com\qa\api\exception\FrameworkException.class
+com\qa\api\pojo\CredentialContact.class
+com\qa\api\pojo\CredentialContact$CredentialContactBuilder.class
+com\qa\api\utils\JsonUtils.class
+com\qa\api\utils\JsonPathValidator.class

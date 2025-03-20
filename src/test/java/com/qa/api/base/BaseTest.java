@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeTest;
 import com.qa.api.client.RestClient;
 import com.qa.api.manager.ConfigManager;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 
 public class BaseTest {
@@ -17,6 +18,8 @@ public class BaseTest {
 	protected static final String BASE_URL_CONTACTS="https://thinking-tester-contact-list.herokuapp.com";
 	protected static final String BASE_URL_REQ_RES="https://reqres.in";
 	protected static final String BASE_URL_HEROKUAPP="https://the-internet.herokuapp.com";
+	protected static final String BASE_URL_AMADEUS = "https://test.api.amadeus.com";
+	protected final static String BASE_URL_LOCALHOST_PORT = "http://localhost:8089";
 
 	protected RestClient restClient;
 
@@ -32,6 +35,9 @@ public class BaseTest {
 		 * if (baseUrl != null) { ConfigManager.set("baseUrl", baseUrl); }->as it was
 		 * added in testng.xml file
 		 */
+		//https://allurereport.org/docs/install-for-windows/
+		//https://github.com/ScoopInstaller/Install?tab=readme-ov-file#readme
+		RestAssured.filters(new AllureRestAssured());
 		restClient = new RestClient();
 	}
 

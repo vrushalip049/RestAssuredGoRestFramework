@@ -89,5 +89,13 @@
 	</test>
 
 
+<test name="AmadeusAPITest User Test">
+		<!-- <parameter name="baseUrl" value="https://gorest.co.in" /> -->
+
+		<classes>
+			<class name="com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest" />
+		</classes>
+	</test>
+
 
 </suite>

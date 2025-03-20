@@ -1,0 +1,1 @@
+{"uuid":"c69befc4-5f7b-4684-bd9e-04bf172ca5d8","name":"GetUserWithDeserilization User Test","children":["d1a79154-125d-4e72-a4cc-0c79183dbd2e"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742475472227,"stop":1742475472227}],"afters":[],"start":1742475472226,"stop":1742475472992}

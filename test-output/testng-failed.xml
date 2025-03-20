@@ -11,4 +11,14 @@
       </class> <!-- com.qa.products.api.test.ProductAPITestWithJsonPathValidator -->
     </classes>
   </test> <!-- ProductAPITestWithJsonPathValidator User Test(failed) -->
+  <test thread-count="5" name="AmadeusAPITest User Test(failed)" verbose="3">
+    <classes>
+      <class name="com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest">
+        <methods>
+          <include name="getFlightDetailsTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest -->
+    </classes>
+  </test> <!-- AmadeusAPITest User Test(failed) -->
 </suite> <!-- Failed suite [API Regression Suite] -->

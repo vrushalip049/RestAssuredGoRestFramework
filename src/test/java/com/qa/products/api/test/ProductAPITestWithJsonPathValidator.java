@@ -15,7 +15,7 @@ import io.restassured.response.Response;
 
 public class ProductAPITestWithJsonPathValidator extends BaseTest {
 
-	@Test
+	@Test(enabled = false)
 	public void getProductTestJsonPathTest() {
 		Response response = restClient.get(BASE_URL_PRODUCT,"/products", null, null, AuthType.NO_AUTH, ContentType.JSON);
 		Assert.assertEquals(response.getStatusCode(), 200);

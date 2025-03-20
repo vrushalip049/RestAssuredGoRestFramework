@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="23.441" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Admin\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\boot\plexus-classworlds-2.8.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="maven.conf" value="C:\Users\Admin\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9/conf"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.17\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Users\Admin\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.17"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.17+10-LTS-269"/>
+    <property name="user.name" value="Admin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.17"/>
+    <property name="user.dir" value="C:\Users\Admin\2025_eclipse-Automationworkspace\RestAssuredGoRestFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Admin\2025_eclipse-Automationworkspace\RestAssuredGoRestFramework"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\Admin\Downloads\chromedriver_win32 (1)\chromedriver.exe;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Admin\Downloads\curl-8.12.1_4-win64-mingw\curl-8.12.1_4-win64-mingw\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Admin\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\Admin\scoop\shims;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Jar2Exe Wizard\;C:\ProgramData\Admin\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.2\bin;;C:\Users\Admin\AppData\Local\Box\Box Edit\;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.17+10-LTS-269"/>
+    <property name="classworlds.conf" value="C:\Users\Admin\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin\m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\Users\Admin\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\lib\jansi-native"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="getAllUserTest" classname="com.qa.api.tests.GetUserTest" time="2.004"/>
+  <testcase name="getSingleUserTest" classname="com.qa.api.tests.GetUserTest" time="1.021"/>
+  <testcase name="CreateUserTest" classname="com.qa.api.tests.CreateUserTest" time="2.799"/>
+  <testcase name="CreateUserTestUsingBuilderTest" classname="com.qa.api.tests.CreateUserTest" time="1.557"/>
+  <testcase name="CreateUserTestUsingBuilderPatchTest" classname="com.qa.api.tests.PatchUpdateTest" time="2.859"/>
+  <testcase name="CreateUserTestUsingBuilderPutTest" classname="com.qa.api.tests.PutUpdateTest" time="2.689"/>
+  <testcase name="CreateUserTestUsingBuilderDeleteTest" classname="com.qa.api.tests.DeleteTest" time="4.683"/>
+  <testcase name="getUserReqresTest" classname="com.qa.reqres.api.tests.ReqresTest" time="0.078"/>
+  <testcase name="getContactTest" classname="com.qa.contacts.api.tests.ContactAPITest" time="1.09"/>
+  <testcase name="getProductAPILimitTest" classname="com.qa.products.api.test.ProductAPITest" time="0.596"/>
+  <testcase name="getProductAPITest" classname="com.qa.products.api.test.ProductAPITest" time="0.628"/>
+  <testcase name="getDeserilizeAllUserTest" classname="com.qa.api.tests.GetUserWithDeserilization" time="0.785"/>
+</testsuite>

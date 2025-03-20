@@ -1,0 +1,13 @@
+com\qa\api\tests\PutUpdateTest.class
+com\qa\products\api\test\ProductAPITestWithJsonPathValidator.class
+com\qa\api\tests\GetUserTest.class
+com\qa\reqres\api\tests\ReqresTest.class
+com\qa\api\tests\DeleteTest.class
+com\qa\products\api\test\ProductAPITest.class
+com\qa\contacts\api\tests\ContactAPITest.class
+com\qa\api\tests\CreateUserTest.class
+com\qa\api\tests\GetUserWithDeserilization.class
+com\qa\api\base\BaseTest.class
+com\qa\Oauth2\Amadeus\api\tests\AmadeusAPITest.class
+com\qa\basicAuth\api\tests\BasicAuthTest.class
+com\qa\api\tests\PatchUpdateTest.class

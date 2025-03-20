@@ -1,0 +1,1 @@
+{"uuid":"a61cb1ec-2e89-4951-a931-d9801adcea3d","name":"ProductAPITestWithJsonPathValidator User Test","children":["a8150fac-18f0-47f5-97ee-25776b0ffc1e"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742465335153,"stop":1742465335154}],"afters":[],"start":1742465335153,"stop":1742465335790}
