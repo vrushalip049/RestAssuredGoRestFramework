@@ -20,7 +20,7 @@ public class PutUpdateTest  extends BaseTest{
 		// 1. POST
 		User user = User.builder().name("Vrushali").email(StringUtility.getRandomEmailId()).status("active")
 				.gender("female").build();
-		Response response = restClient.post("/public/v2/users", user, null, null, AuthType.BEARER_TOKEN,
+		Response response = restClient.post(BASE_URL_GOREST,"/public/v2/users", user, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 
 		System.out.println("response_>" + response.asPrettyString());
@@ -31,7 +31,7 @@ public class PutUpdateTest  extends BaseTest{
 		System.out.println("User id" + userid);
 
 		// 2. GET
-		Response responseGET = restClient.get("/public/v2/users/" + userid, null, null, AuthType.BEARER_TOKEN,
+		Response responseGET = restClient.get(BASE_URL_GOREST,"/public/v2/users/" + userid, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 
 		Assert.assertEquals(responseGET.getStatusCode(), 200);
@@ -46,7 +46,7 @@ public class PutUpdateTest  extends BaseTest{
 		//update user details
 		user.setStatus("inactive");
 		user.setGender("male");
-		Response responsePUT =restClient.put("/public/v2/users/"+userid, user, null, null, AuthType.BEARER_TOKEN,
+		Response responsePUT =restClient.put(BASE_URL_GOREST,"/public/v2/users/"+userid, user, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 		Assert.assertEquals(responsePUT.getStatusCode(), 200);
 

@@ -21,17 +21,21 @@ public class CreateUserTest extends BaseTest {
 	{
 		//1.POST Call
 		
-		User user = new User("Vrushali", StringUtility.getRandomEmailId(), "female", "active");
-		Response response = restClient.post("/public/v2/users", user, null, null, AuthType.BEARER_TOKEN,
-				ContentType.JSON);
-
+		//User user = new User("Vrushali", StringUtility.getRandomEmailId(), "female", "active");
+		User user = new User(null,"Vrushali", StringUtility.getRandomEmailId(), "female", "active");
+		Response response = restClient.post(BASE_URL_GOREST,"/public/v2/users", user, null, null,
+				 AuthType.BEARER_TOKEN, ContentType.JSON);
+		/*
+		 * Response response = restClient.post("/public/v2/users", user, null, null,
+		 * AuthType.BEARER_TOKEN, ContentType.JSON); when base url was configure in testng.xmlf file as parameter
+		 */
 		System.out.println("response_>" + response.asPrettyString());
 		Assert.assertEquals(response.getStatusCode(), 201);
 		//fetch userid
 		String userid=response.jsonPath().getString("id");
 		System.out.println("User id"+userid);
 		//2.GET call
-		restClient.get("/public/v2/users/"+userid, null, null, AuthType.BEARER_TOKEN,
+		restClient.get(BASE_URL_GOREST,"/public/v2/users/"+userid, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 		
 		
@@ -53,7 +57,7 @@ public class CreateUserTest extends BaseTest {
 				"C:\\Users\\Admin\\2025_eclipse-Automationworkspace\\RestAssuredGoRestFramework\\src\\test\\resources\\json\\user.json");
 		//User user = new User("Vrushali", StringUtility.getRandomEmailId(), "female", "active");
 		//User user = new User("Vrushali", "Vrushalipatisssssssssssssssaaaaal@gmail.com", "female", "active");
-		Response response = restClient.post("/public/v2/users", file, null, null, AuthType.BEARER_TOKEN,
+		Response response = restClient.post(BASE_URL_GOREST,"/public/v2/users", file, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 
 		System.out.println("response_>" + response.asPrettyString());
@@ -70,7 +74,7 @@ public class CreateUserTest extends BaseTest {
 		// 1. POST
 		User user = User.builder().name("Vrushali").email(StringUtility.getRandomEmailId()).status("active")
 				.gender("female").build();
-		Response response = restClient.post("/public/v2/users", user, null, null, AuthType.BEARER_TOKEN,
+		Response response = restClient.post(BASE_URL_GOREST,"/public/v2/users", user, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 
 		System.out.println("response_>" + response.asPrettyString());
@@ -81,7 +85,7 @@ public class CreateUserTest extends BaseTest {
 		System.out.println("User id" + userid);
 
 		// 2. GET
-		Response responseGET = restClient.get("/public/v2/users/" + userid, null, null, AuthType.BEARER_TOKEN,
+		Response responseGET = restClient.get(BASE_URL_GOREST,"/public/v2/users/" + userid, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 
 		Assert.assertEquals(responseGET.getStatusCode(), 200);

@@ -19,7 +19,7 @@ public class ContactAPITest extends BaseTest {
 	public void getToken() {
 		CredentialContact cred = CredentialContact.builder().email("vrushalip049@gmail.com").password("Vrush@123")
 				.build();
-		Response response = restClient.post("/users/login", cred, null, null, AuthType.NO_AUTH, ContentType.JSON);
+		Response response = restClient.post(BASE_URL_CONTACTS,"/users/login", cred, null, null, AuthType.NO_AUTH, ContentType.JSON);
 		// String token=response.jsonPath().get("token");
 
 		tokenId = response.jsonPath().get("token");
@@ -34,7 +34,7 @@ public class ContactAPITest extends BaseTest {
 	@Test
 	public void getContactTest()
 	{
-		Response response =restClient.get("/contacts", null, null, AuthType.CONTACTS_BEARER_TOKEN,  ContentType.JSON);
+		Response response =restClient.get(BASE_URL_CONTACTS,"/contacts", null, null, AuthType.CONTACTS_BEARER_TOKEN,  ContentType.JSON);
 		response.prettyPrint();
 		
 	}

@@ -19,7 +19,7 @@ public class DeleteTest  extends BaseTest{
 		// 1. POST
 		User user = User.builder().name("Vrushali").email(StringUtility.getRandomEmailId()).status("active")
 				.gender("female").build();
-		Response response = restClient.post("/public/v2/users", user, null, null, AuthType.BEARER_TOKEN,
+		Response response = restClient.post(BASE_URL_GOREST,"/public/v2/users", user, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 
 		System.out.println("response_>" + response.asPrettyString());
@@ -30,7 +30,7 @@ public class DeleteTest  extends BaseTest{
 		System.out.println("User id" + userid);
 
 		// 2. GET
-		Response responseGET = restClient.get("/public/v2/users/" + userid, null, null, AuthType.BEARER_TOKEN,
+		Response responseGET = restClient.get(BASE_URL_GOREST,"/public/v2/users/" + userid, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 
 		Assert.assertEquals(responseGET.getStatusCode(), 200);
@@ -45,7 +45,7 @@ public class DeleteTest  extends BaseTest{
 		//update user details
 		user.setStatus("inactive");
 		user.setGender("male");
-		Response responsePatch =restClient.patch("/public/v2/users/"+userid, user, null, null, AuthType.BEARER_TOKEN,
+		Response responsePatch =restClient.patch(BASE_URL_GOREST,"/public/v2/users/"+userid, user, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 		Assert.assertEquals(responsePatch.getStatusCode(), 200);
 
@@ -55,13 +55,13 @@ public class DeleteTest  extends BaseTest{
 
 		//4.delete call
 		
-		Response responsedelete =restClient.delete("/public/v2/users/"+userid, null, null, AuthType.BEARER_TOKEN,
+		Response responsedelete =restClient.delete(BASE_URL_GOREST,"/public/v2/users/"+userid, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 		Assert.assertEquals(responsedelete.getStatusCode(), 204);
 		
 		
 		//4.Get call after deletion
-		Response responseGETAfterDelete = restClient.get("/public/v2/users/"+userid, null, null, AuthType.BEARER_TOKEN,
+		Response responseGETAfterDelete = restClient.get(BASE_URL_GOREST,"/public/v2/users/"+userid, null, null, AuthType.BEARER_TOKEN,
 				ContentType.JSON);
 
 		Assert.assertEquals(responseGETAfterDelete.getStatusCode(), 404);

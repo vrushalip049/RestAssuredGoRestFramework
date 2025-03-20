@@ -1,49 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [API Regression Suite]" guice-stage="DEVELOPMENT" verbose="3">
-  <test thread-count="5" name="CreateUserTest User Test(failed)" verbose="3">
-    <parameter name="baseUrl" value="https://gorest.co.in"/>
+  <test thread-count="5" name="ProductAPITestWithJsonPathValidator User Test(failed)" verbose="3">
     <classes>
-      <class name="com.qa.api.tests.CreateUserTest">
+      <class name="com.qa.products.api.test.ProductAPITestWithJsonPathValidator">
         <methods>
-          <include name="CreateUserTestUsingBuilderTest"/>
-          <include name="CreateUserTest"/>
           <include name="setUp"/>
+          <include name="getProductTestJsonPathTest"/>
         </methods>
-      </class> <!-- com.qa.api.tests.CreateUserTest -->
+      </class> <!-- com.qa.products.api.test.ProductAPITestWithJsonPathValidator -->
     </classes>
-  </test> <!-- CreateUserTest User Test(failed) -->
-  <test thread-count="5" name="PatchUpdateTest Update User Test(failed)" verbose="3">
-    <parameter name="baseUrl" value="https://gorest.co.in"/>
-    <classes>
-      <class name="com.qa.api.tests.PatchUpdateTest">
-        <methods>
-          <include name="CreateUserTestUsingBuilderPatchTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.api.tests.PatchUpdateTest -->
-    </classes>
-  </test> <!-- PatchUpdateTest Update User Test(failed) -->
-  <test thread-count="5" name="PutUpdateTest User Test(failed)" verbose="3">
-    <parameter name="baseUrl" value="https://gorest.co.in"/>
-    <classes>
-      <class name="com.qa.api.tests.PutUpdateTest">
-        <methods>
-          <include name="CreateUserTestUsingBuilderPutTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.api.tests.PutUpdateTest -->
-    </classes>
-  </test> <!-- PutUpdateTest User Test(failed) -->
-  <test thread-count="5" name="Delete User Test(failed)" verbose="3">
-    <parameter name="baseUrl" value="https://gorest.co.in"/>
-    <classes>
-      <class name="com.qa.api.tests.DeleteTest">
-        <methods>
-          <include name="CreateUserTestUsingBuilderDeleteTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.api.tests.DeleteTest -->
-    </classes>
-  </test> <!-- Delete User Test(failed) -->
+  </test> <!-- ProductAPITestWithJsonPathValidator User Test(failed) -->
 </suite> <!-- Failed suite [API Regression Suite] -->

@@ -13,6 +13,7 @@ import io.restassured.specification.ResponseSpecification;
 import static io.restassured.RestAssured.expect;
 
 import java.io.File;
+import java.util.Base64;
 import java.util.Map;
 
 public class RestClient {
@@ -32,7 +33,7 @@ public class RestClient {
 
 	private String baseUrl = ConfigManager.get("baseUrl");
 
-	private RequestSpecification setupRequest(AuthType authType, ContentType contenType) {
+	private RequestSpecification setupRequest(String baseUrl,AuthType authType, ContentType contenType) {
 		RequestSpecification request = RestAssured.given().log().all().
 
 				baseUri(baseUrl).contentType(contenType).accept(contenType);
@@ -50,7 +51,7 @@ public class RestClient {
 			break;
 
 		case BASIC_AUTH:
-			request.header("Authorization", "Basic ");
+			request.header("Authorization", "Basic "+basicAuthGenterat());
 			break;
 
 		case API_KEY:
@@ -69,6 +70,15 @@ public class RestClient {
 		return request;
 	}
 
+	
+	private String basicAuthGenterat()
+	
+	{
+		String cred= ConfigManager.get("basicAuthUsername")+":"+ConfigManager.get("basicAuthPassword");
+		
+		 return Base64.getEncoder().encodeToString(cred.getBytes());
+		
+	}
 	private String genertaOauth2Toke() {
 		return RestAssured.given().formParam("client_id", ConfigManager.get("clientId"))
 				.formParam("client_secrete", ConfigManager.get("clientSecrte"))
@@ -89,9 +99,9 @@ public class RestClient {
 	 * @return
 	 */
 
-	public Response get(String endPoint, Map<String, String> queryParms, Map<String, String> pathParm,
+	public Response get(String baseUrl,String endPoint, Map<String, String> queryParms, Map<String, String> pathParm,
 			AuthType authType, ContentType contenType) {
-		RequestSpecification request = setupRequest(authType, contenType);
+		RequestSpecification request = setupRequest( baseUrl,authType, contenType);
 
 		applyParams(request, queryParms, pathParm);
 		/*
@@ -118,9 +128,9 @@ public class RestClient {
 	 * @return
 	 */
 
-	public <T> Response post(String endPoint, T body, Map<String, String> queryParms, Map<String, String> pathParm,
+	public <T> Response post(String baseUrl,String endPoint, T body, Map<String, String> queryParms, Map<String, String> pathParm,
 			AuthType authType, ContentType contenType) {
-		RequestSpecification request = setupAuthAndContentType(authType, contenType);
+		RequestSpecification request = setupAuthAndContentType(baseUrl,authType, contenType);
 
 		applyParams(request, queryParms, pathParm);
 		/*
@@ -135,9 +145,9 @@ public class RestClient {
 
 	}
 
-	public Response post(String endPoint, File file, Map<String, String> queryParms, Map<String, String> pathParm,
+	public Response post(String baseUrl,String endPoint, File file, Map<String, String> queryParms, Map<String, String> pathParm,
 			AuthType authType, ContentType contenType) {
-		RequestSpecification request = setupAuthAndContentType(authType, contenType);
+		RequestSpecification request = setupAuthAndContentType(baseUrl,authType, contenType);
 		// RequestSpecification request=setupRequest(authType,contenType);
 
 		applyParams(request, queryParms, pathParm);
@@ -164,9 +174,9 @@ public class RestClient {
 	 * @param contenType
 	 * @return
 	 */
-	public <T> Response put(String endPoint, T body, Map<String, String> queryParms, Map<String, String> pathParm,
+	public <T> Response put(String baseUrl,String endPoint, T body, Map<String, String> queryParms, Map<String, String> pathParm,
 			AuthType authType, ContentType contenType) {
-		RequestSpecification request = setupAuthAndContentType(authType, contenType);
+		RequestSpecification request = setupAuthAndContentType(baseUrl,authType, contenType);
 
 		applyParams(request, queryParms, pathParm);
 		/*
@@ -182,9 +192,9 @@ public class RestClient {
 
 	}
 	
-	public <T> Response patch(String endPoint, T body, Map<String, String> queryParms, Map<String, String> pathParm,
+	public <T> Response patch(String baseUrl,String endPoint, T body, Map<String, String> queryParms, Map<String, String> pathParm,
 			AuthType authType, ContentType contenType) {
-		RequestSpecification request = setupAuthAndContentType(authType, contenType);
+		RequestSpecification request = setupAuthAndContentType(baseUrl, authType, contenType);
 
 		applyParams(request, queryParms, pathParm);
 		/*
@@ -199,9 +209,9 @@ public class RestClient {
 
 	}
 	
-	public Response delete(String endPoint, Map<String, String> queryParms, Map<String, String> pathParm,
+	public Response delete(String baseUrl,String endPoint, Map<String, String> queryParms, Map<String, String> pathParm,
 			AuthType authType, ContentType contenType) {
-		RequestSpecification request = setupAuthAndContentType(authType, contenType);
+		RequestSpecification request = setupAuthAndContentType(baseUrl,authType, contenType);
 
 		applyParams(request, queryParms, pathParm);
 		/*
@@ -217,8 +227,8 @@ public class RestClient {
 	}
 
 
-	private RequestSpecification setupAuthAndContentType(AuthType authType, ContentType contenType) {
-		return setupRequest(authType, contenType);
+	private RequestSpecification setupAuthAndContentType(String baseUrl,AuthType authType, ContentType contenType) {
+		return setupRequest(baseUrl,authType, contenType);
 	}
 
 	private void applyParams(RequestSpecification request, Map<String, String> queryParms,
