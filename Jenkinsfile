@@ -36,7 +36,7 @@ pipeline
                 
       stage('Regression API Automation Tests') {
     steps {
-    catchError(buildResult:"SUCESS" ,stageResult:"FAILURE")
+     catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
     {
     git 'https://github.com/vrushalip049/RestAssuredGoRestFramework'
     bat "mvn clean test -Dsurefire.suiteXmlFiles=src\test\resources\testrunner\testng_regression.xml"
