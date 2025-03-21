@@ -13,7 +13,7 @@ pipeline
             steps
             {
                  git 'https://github.com/jglick/simple-maven-project-with-tests.git'
-                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
             post 
             {
@@ -39,7 +39,7 @@ pipeline
     catchError(buildResult:"SUCESS" ,stageResult:"FAILURE")
     {
     git 'https://github.com/vrushalip049/RestAssuredGoRestFramework'
-    sh "mvn clean test -Dsurefire.suiteXmlFiles=src\test\resources\testrunner\testng_regression.xml"
+    bat "mvn clean test -Dsurefire.suiteXmlFiles=src\test\resources\testrunner\testng_regression.xml"
 		}
     }
 }
