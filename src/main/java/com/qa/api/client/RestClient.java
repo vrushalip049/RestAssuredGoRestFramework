@@ -30,6 +30,7 @@ public class RestClient {
 	private ResponseSpecification responseSpec401 = expect().statusCode(401);
 	private ResponseSpecification responseSpec404 = expect().statusCode(404);
 	private ResponseSpecification responseSpec500 = expect().statusCode(500);
+//	private ResponseSpecification responseSpec500 = expect().statusCode(500);
 
 	private String baseUrl = ConfigManager.get("baseUrl");
 
