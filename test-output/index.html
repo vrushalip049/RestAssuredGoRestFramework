@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-API_Regression_Suite" class="navigator-link">
-              <span class="suite-name border-failed">API Regression Suite</span>
+              <span class="suite-name border-passed">API Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-API_Regression_Suite" class="hide-methods failed suite-API_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-API_Regression_Suite -->
-                      <a href="#" panel-name="suite-API_Regression_Suite" class="show-methods failed suite-API_Regression_Suite"> (show)</a> <!-- show-methods failed suite-API_Regression_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-API_Regression_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-API_Regression_Suite" title="com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest" class="method navigator-link" hash-for-method="getFlightDetailsTest">getFlightDetailsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-API_Regression_Suite" title="com.qa.products.api.test.ProductAPITestWithJsonPathValidator" class="method navigator-link" hash-for-method="getProductTestJsonPathTest">getProductTestJsonPathTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-API_Regression_Suite -->
+                    <span class="method-stats">12 methods,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -192,205 +173,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-API_Regression_Suite" class="panel API_Regression_Suite">
-          <div class="suite-API_Regression_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.products.api.test.ProductAPITestWithJsonPathValidator</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getProductTestJsonPathTest">
-                  </a> <!-- getProductTestJsonPathTest -->
-                  <span class="method-name">getProductTestJsonPathTest</span>
-                  <div class="stack-trace">java.lang.ClassCastException: class java.lang.Double cannot be cast to class java.util.List (java.lang.Double and java.util.List are in module java.base of loader &apos;bootstrap&apos;)
-	at com.qa.api.utils.JsonPathValidator.readMap(JsonPathValidator.java:35)
-	at com.qa.products.api.test.ProductAPITestWithJsonPathValidator.getProductTestJsonPathTest(ProductAPITestWithJsonPathValidator.java:38)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Regression_Suite-class-failed -->
-          <div class="suite-API_Regression_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getFlightDetailsTest">
-                  </a> <!-- getFlightDetailsTest -->
-                  <span class="method-name">getFlightDetailsTest</span>
-                  <div class="stack-trace">java.lang.ClassCastException: class io.restassured.internal.NoParameterValue cannot be cast to class java.lang.String (io.restassured.internal.NoParameterValue is in unnamed module of loader &apos;app&apos;; java.lang.String is in module java.base of loader &apos;bootstrap&apos;)
-	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
-	at io.qameta.allure.attachment.http.HttpRequestAttachment$Builder.getCurl(HttpRequestAttachment.java:253)
-	at io.qameta.allure.attachment.http.HttpRequestAttachment$Builder.build(HttpRequestAttachment.java:242)
-	at io.qameta.allure.restassured.AllureRestAssured.filter(AllureRestAssured.java:114)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at com.qa.api.client.RestClient.genertaOauth2Toke(RestClient.java:85)
-	at com.qa.api.client.RestClient.setupRequest(RestClient.java:50)
-	at com.qa.api.client.RestClient.get(RestClient.java:104)
-	at com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest.getFlightDetailsTest(AmadeusAPITest.java:23)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Regression_Suite-class-failed -->
-          <div class="suite-API_Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.api.tests.PatchUpdateTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreateUserTestUsingBuilderPatchTest">
-                  </a> <!-- CreateUserTestUsingBuilderPatchTest -->
-                  <span class="method-name">CreateUserTestUsingBuilderPatchTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Regression_Suite-class-passed -->
-          <div class="suite-API_Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.api.tests.DeleteTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreateUserTestUsingBuilderDeleteTest">
-                  </a> <!-- CreateUserTestUsingBuilderDeleteTest -->
-                  <span class="method-name">CreateUserTestUsingBuilderDeleteTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Regression_Suite-class-passed -->
-          <div class="suite-API_Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.contacts.api.tests.ContactAPITest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getContactTest">
-                  </a> <!-- getContactTest -->
-                  <span class="method-name">getContactTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Regression_Suite-class-passed -->
-          <div class="suite-API_Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.api.tests.PutUpdateTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreateUserTestUsingBuilderPutTest">
-                  </a> <!-- CreateUserTestUsingBuilderPutTest -->
-                  <span class="method-name">CreateUserTestUsingBuilderPutTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Regression_Suite-class-passed -->
           <div class="suite-API_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -416,36 +198,14 @@
           <div class="suite-API_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.api.tests.CreateUserTest</span>
+              <span class="class-name">com.qa.api.tests.PutUpdateTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateUserTest">
-                  </a> <!-- CreateUserTest -->
-                  <span class="method-name">CreateUserTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreateUserTestUsingBuilderTest">
-                  </a> <!-- CreateUserTestUsingBuilderTest -->
-                  <span class="method-name">CreateUserTestUsingBuilderTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Regression_Suite-class-passed -->
-          <div class="suite-API_Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.api.tests.GetUserWithDeserilization</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getDeserilizeAllUserTest">
-                  </a> <!-- getDeserilizeAllUserTest -->
-                  <span class="method-name">getDeserilizeAllUserTest</span>
+                  <a name="CreateUserTestUsingBuilderPutTest">
+                  </a> <!-- CreateUserTestUsingBuilderPutTest -->
+                  <span class="method-name">CreateUserTestUsingBuilderPutTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -468,6 +228,51 @@
           <div class="suite-API_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.qa.contacts.api.tests.ContactAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getContactTest">
+                  </a> <!-- getContactTest -->
+                  <span class="method-name">getContactTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Suite-class-passed -->
+          <div class="suite-API_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.api.tests.PatchUpdateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateUserTestUsingBuilderPatchTest">
+                  </a> <!-- CreateUserTestUsingBuilderPatchTest -->
+                  <span class="method-name">CreateUserTestUsingBuilderPatchTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Suite-class-passed -->
+          <div class="suite-API_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.api.tests.GetUserWithDeserilization</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getDeserilizeAllUserTest">
+                  </a> <!-- getDeserilizeAllUserTest -->
+                  <span class="method-name">getDeserilizeAllUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Suite-class-passed -->
+          <div class="suite-API_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.qa.products.api.test.ProductAPITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -483,6 +288,43 @@
                   <a name="getProductAPITest">
                   </a> <!-- getProductAPITest -->
                   <span class="method-name">getProductAPITest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Suite-class-passed -->
+          <div class="suite-API_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.api.tests.DeleteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateUserTestUsingBuilderDeleteTest">
+                  </a> <!-- CreateUserTestUsingBuilderDeleteTest -->
+                  <span class="method-name">CreateUserTestUsingBuilderDeleteTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Regression_Suite-class-passed -->
+          <div class="suite-API_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.api.tests.CreateUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateUserTest">
+                  </a> <!-- CreateUserTest -->
+                  <span class="method-name">CreateUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateUserTestUsingBuilderTest">
+                  </a> <!-- CreateUserTestUsingBuilderTest -->
+                  <span class="method-name">CreateUserTestUsingBuilderTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -619,68 +461,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(14);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CreateUserTestUsingBuilderDeleteTest')
 data.setCell(0, 2, 'com.qa.api.tests.DeleteTest')
-data.setCell(0, 3, 4654);
+data.setCell(0, 3, 4390);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'CreateUserTestUsingBuilderPatchTest')
 data.setCell(1, 2, 'com.qa.api.tests.PatchUpdateTest')
-data.setCell(1, 3, 3013);
+data.setCell(1, 3, 3165);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'CreateUserTestUsingBuilderPutTest')
 data.setCell(2, 2, 'com.qa.api.tests.PutUpdateTest')
-data.setCell(2, 3, 2957);
+data.setCell(2, 3, 2692);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'CreateUserTest')
 data.setCell(3, 2, 'com.qa.api.tests.CreateUserTest')
-data.setCell(3, 3, 2597);
+data.setCell(3, 3, 2161);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'CreateUserTestUsingBuilderTest')
-data.setCell(4, 2, 'com.qa.api.tests.CreateUserTest')
-data.setCell(4, 3, 2044);
+data.setCell(4, 1, 'getAllUserTest')
+data.setCell(4, 2, 'com.qa.api.tests.GetUserTest')
+data.setCell(4, 3, 1872);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getAllUserTest')
-data.setCell(5, 2, 'com.qa.api.tests.GetUserTest')
-data.setCell(5, 3, 2028);
+data.setCell(5, 1, 'CreateUserTestUsingBuilderTest')
+data.setCell(5, 2, 'com.qa.api.tests.CreateUserTest')
+data.setCell(5, 3, 1845);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'getContactTest')
 data.setCell(6, 2, 'com.qa.contacts.api.tests.ContactAPITest')
-data.setCell(6, 3, 1089);
+data.setCell(6, 3, 1072);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'getSingleUserTest')
 data.setCell(7, 2, 'com.qa.api.tests.GetUserTest')
-data.setCell(7, 3, 1079);
+data.setCell(7, 3, 969);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'getDeserilizeAllUserTest')
 data.setCell(8, 2, 'com.qa.api.tests.GetUserWithDeserilization')
-data.setCell(8, 3, 730);
+data.setCell(8, 3, 640);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'getProductTestJsonPathTest')
-data.setCell(9, 2, 'com.qa.products.api.test.ProductAPITestWithJsonPathValidator')
-data.setCell(9, 3, 633);
+data.setCell(9, 1, 'getProductAPITest')
+data.setCell(9, 2, 'com.qa.products.api.test.ProductAPITest')
+data.setCell(9, 3, 432);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'getProductAPILimitTest')
 data.setCell(10, 2, 'com.qa.products.api.test.ProductAPITest')
-data.setCell(10, 3, 605);
+data.setCell(10, 3, 399);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'getProductAPITest')
-data.setCell(11, 2, 'com.qa.products.api.test.ProductAPITest')
-data.setCell(11, 3, 560);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'getUserReqresTest')
-data.setCell(12, 2, 'com.qa.reqres.api.tests.ReqresTest')
-data.setCell(12, 3, 92);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'getFlightDetailsTest')
-data.setCell(13, 2, 'com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest')
-data.setCell(13, 3, 6);
+data.setCell(11, 1, 'getUserReqresTest')
+data.setCell(11, 2, 'com.qa.reqres.api.tests.ReqresTest')
+data.setCell(11, 3, 78);
 window.suiteTableData['API_Regression_Suite']= { tableData: data, tableDiv: 'times-div-API_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-API_Regression_Suite">
               </div> <!-- times-div-API_Regression_Suite -->
             </div> <!-- times-div -->
@@ -695,9 +529,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-API_Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.products.api.test.ProductAPITestWithJsonPathValidator</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getProductTestJsonPathTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getFlightDetailsTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.qa.api.tests.CreateUserTest</span>
               <div class="ignored-methods-div">
@@ -720,138 +568,126 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">getAllUserTest</span>
-                <span class="method-start">477 ms</span>
+                <span class="method-start">412 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getSingleUserTest</span>
-                <span class="method-start">2546 ms</span>
+                <span class="method-start">2326 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.api.tests.CreateUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3663 ms</span>
+                <span class="method-start">3329 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">CreateUserTest</span>
-                <span class="method-start">3664 ms</span>
+                <span class="method-start">3334 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreateUserTestUsingBuilderTest</span>
-                <span class="method-start">6263 ms</span>
+                <span class="method-start">5496 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.api.tests.PatchUpdateTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8313 ms</span>
+                <span class="method-start">7348 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">CreateUserTestUsingBuilderPatchTest</span>
-                <span class="method-start">8315 ms</span>
+                <span class="method-start">7349 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.api.tests.PutUpdateTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11335 ms</span>
+                <span class="method-start">10521 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">CreateUserTestUsingBuilderPutTest</span>
-                <span class="method-start">11337 ms</span>
+                <span class="method-start">10522 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.api.tests.DeleteTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14300 ms</span>
+                <span class="method-start">13219 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">CreateUserTestUsingBuilderDeleteTest</span>
-                <span class="method-start">14302 ms</span>
+                <span class="method-start">13220 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.reqres.api.tests.ReqresTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18961 ms</span>
+                <span class="method-start">17616 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">getUserReqresTest</span>
-                <span class="method-start">18962 ms</span>
+                <span class="method-start">17617 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.contacts.api.tests.ContactAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">19064 ms</span>
+                <span class="method-start">17702 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">getToken</span>
-                <span class="method-start">19068 ms</span>
+                <span class="method-start">17704 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getContactTest</span>
-                <span class="method-start">20234 ms</span>
+                <span class="method-start">18949 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.products.api.test.ProductAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">21328 ms</span>
+                <span class="method-start">20027 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">getProductAPILimitTest</span>
-                <span class="method-start">21329 ms</span>
+                <span class="method-start">20029 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getProductAPITest</span>
-                <span class="method-start">21936 ms</span>
+                <span class="method-start">20430 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.products.api.test.ProductAPITestWithJsonPathValidator</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">22507 ms</span>
+                <span class="method-start">20872 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getProductTestJsonPathTest</span>
-                <span class="method-start">22509 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.api.tests.GetUserWithDeserilization</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23152 ms</span>
+                <span class="method-start">20877 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">getDeserilizeAllUserTest</span>
-                <span class="method-start">23154 ms</span>
+                <span class="method-start">20878 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.Oauth2.Amadeus.api.tests.AmadeusAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23891 ms</span>
+                <span class="method-start">21529 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getFlightDetailsTest</span>
-                <span class="method-start">23892 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
