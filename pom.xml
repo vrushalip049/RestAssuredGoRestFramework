@@ -92,6 +92,11 @@
 			<artifactId>allure-testng</artifactId>
 			<version>2.29.1</version>
 		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit-platform-engine</artifactId>
+			<version>7.14.0</version>
+		</dependency>
 
 	</dependencies>
 
@@ -125,8 +130,8 @@
 						<forkCount>3</forkCount>
 						<reuseForks>true</reuseForks>
 						<suiteXmlFiles>
-							<!--<suiteXmlFile>src\test\resources\testrunner\testng_regression.xml</suiteXmlFile> -->
-							 <suiteXmlFile>${suiteXmlFiles}</suiteXmlFile>
+						<suiteXmlFile>src\test\resources\testrunner\testng_regression.xml</suiteXmlFile>
+								<!--<suiteXmlFile>${suiteXmlFiles}</suiteXmlFile> -->
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

@@ -1,9 +1,11 @@
 allure-results/
-test-output/
+
+test-output/API Regression Suite/
+test-output/junitreports/
 build/
 reports/
 .mvn/
-/test-output/
+
 application.log
 ##############################
 ## Java
@@ -56,6 +58,7 @@ tmp/
 local.properties
 .loadpath
 .factorypath
+
 
 ## OS X
 ##############################
